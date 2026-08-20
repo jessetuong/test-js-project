@@ -5,15 +5,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./",
-    "lint-fix": "eslint ./ --fix"
+    "lint-fix": "eslint ./ --fix",
+    "markdownlint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "spellcheck": "cspell \"**/*.md\"",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.39.5",
+    "cspell": "^10.0.1",
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
-    "globals": "^17.11.0"
+    "globals": "^17.11.0",
+    "husky": "^9.1.7",
+    "markdownlint-cli2": "^0.23.2"
   }
 }
